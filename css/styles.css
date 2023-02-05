@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+header {
+    background-color: aqua;
+    text-align: center;
+
+}
+
+header a {
+    color: dark gray;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+.menu-links li {
+    line-height: 2.25rem;
+}
+
+.menu-links a {
+    display: block;
+}
+
+.menu-links a:hover,
+.menu-links a:active {
+    color: rgb(1, 15, 14);
+}
+
+main {
+    padding: 1rem;
+
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width:840px) {
+    .menu-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 58.75rem) {
+    main {
+        display: flex;
+        gap: 2%;
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 1rem 0.5rem;
+    }
+
+    section {
+        width: calc(96%/3);
+    }
+}
